@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        main();
+        function main()
+        {
+            let n=9;
+            let sp=Math.trunc(n/2);
+            let st=1;
+            for(let i=1;i<=n;i++){
+                let res=""
+                for(let j=1;j<=sp;j++){
+                    res+=" "
+
+                }
+                for(let k=1;k<=st;k++){
+                    res=+"*"
+                }
+                if(i<Math.trunc(n/2)){
+                    sp-=1
+                    st+=1
+                }
+                else{
+                    sp+=1
+                    st-=1
+                }
+                console.log(res)
+            }
+        }
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
