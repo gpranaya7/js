@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        main();
+        function main(){
+            let n=9848022338;
+            let odsum=0;
+            let evensum=0;
+            while(n>0){
+                let rem=n%10;
+                if(rem%2==0){
+                    evensum+=rem
+                }
+                else{
+                    odsum+=rem
+                }
+                n=Math.trunc(n/10)
+
+
+
+
+            }
+            console.log(odsum,evensum)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
