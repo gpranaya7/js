@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        main();
+        function main(){
+            let n=153;
+            let dup=n;
+            let len=String(n).length;
+            let sum=0;
+            while (n>0){
+                let rem=n%10;
+                let pow=rem**len;
+                sum+=pow;
+                n=Math.trunc(n/10)
+
+            }
+            if(sum==dup){
+                console.log('armstrong no')
+            }
+            else{
+                console.log('not armstrong')
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
