@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        main();
+        function main(){
+            let n=String(2025)
+            let firsthalf='';
+            let secondhalf="";
+            let len=n.length
+            halflen=Math.trunc((String(n).length)/2)
+
+            for (let i=0;i<halflen;i++){
+                firsthalf +=n[i];
+            }
+            for(let j=halflen;j<len;j++){
+                secondhalf +=n[j]
+            }
+            let res=((Number(firsthalf)+Number(secondhalf)))**2
+            if (res==n){
+                console.log("tech number")
+            }
+            else{
+                console.log("not tech" )
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
