@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function main(n,len){
+            if (n==0){
+                return 0
+            }
+            return (n%10)**len+main(Math.trunc(n/10),len-1)
+        }
+        let n=135
+        dup=n
+        let len=String(n).length
+        let res=main(n,len)
+        if(res==dup)
+        console.log("disarium")
+    else
+    console.log("not disarium")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
