@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        main();
+        function main()
+        {
+            let n=7
+            let pos=1
+            let res=0;
+            let count=0;
+            while(n>0){
+                let rem =n%2
+                res+=pos*rem
+                
+                pos*=10
+                n=Math.trunc(n/2)
+                if(rem==1){
+                    count++
+                }
+
+            }
+            console.log(res)
+            if (count%2==0){
+                console.log("evil")
+            }
+            else{
+                console.log("odeous")
+            }
+            
+        }    
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

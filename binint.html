@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        main();
+        function main(){
+            let n=111
+            let res=0;
+            let pow=0
+            while (n>0){
+                let rem=n%10;
+                res+=rem*(2**pow)
+                pow+=1
+                n=Math.trunc(n/10)
+
+
+            }
+            console.log(res)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
